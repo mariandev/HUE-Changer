@@ -3,6 +3,11 @@ HUE-Changer
 
 HUE Changer is a small library (only 3KB minified) that can change colors from an image dynamically.
 
+DEMO
+====
+
+    http://demo.mariandev.eu/hue-changer/
+
 Docs
 ====
 
