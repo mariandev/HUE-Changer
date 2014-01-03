@@ -3,10 +3,8 @@ window.onload = function(){
     canvas = document.getElementById("image");
     ctx = canvas.getContext("2d");
     
-    canvas.width = window.innerWidth;
-    canvas.height = window.innerHeight/2;
-    
-    var random_hue = Math.floor(Math.random()*360);
+    canvas.width = 300;
+    canvas.height = 300;
     
     var imageOb = new Image();
     imageOb.onload = function() {
@@ -14,9 +12,6 @@ window.onload = function(){
         
         var imageOb2 = new Image();
         imageOb2.onload = function() {
-        
-            document.getElementById("hue").value = random_hue;
-            document.getElementById("hue_out").value = random_hue;
             
             var hc = new HUE_Changer();
             var imageObj = ctx.getImageData(0, 0, canvas.width, canvas.height);
@@ -29,13 +24,12 @@ window.onload = function(){
                     image_height: canvas.height,
                     pixels_map: {
                         type: "IMAGE",
-                        //map: [[100,100],[101,100],[102,100],[103,100],[104,100],[105,100]]
                         map: imageOb2
                     },
                     hue: hue
                 });
                 
-                document.getElementById("hue_out").value = hue;
+                document.getElementById("hue_out").value = 'Hue value: '+hue;
                 imageObj.data = image;
                 ctx.putImageData(imageObj, 0, 0);
             }
