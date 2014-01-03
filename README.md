@@ -15,7 +15,7 @@ You can initialize Hue Changer like this:
 
 var hc = new Hue_changer();
 
-After that you can use the function `change` to modify the colors in your images
+After that you can use the function `change_hue` to modify the colors in your images
 
 var new_image = hc.change(options);
 
