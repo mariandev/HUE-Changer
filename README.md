@@ -41,7 +41,7 @@ Pixel Map Types:
 
 `PIXELS_ARRAY` - for this type the `map` value will be an array with the pixels positions that color will be changed with the `hue` value. The elements from the array should look like [x, y] where x and y are the positions of the pixel that color's you want to be changed.
 
-`PIXELS_ARRAY_HUE` - for this type the `map` value will be an array with the pixels positions that color will be changed. The elements from the array should look like [x, y, hue] where x and y are the positions of the pixel that color's you want to be changed and the hue is a number from 0 to 360 with which the pixels's color will be changed.
+`PIXELS_ARRAY_HUE` - for this type the `map` value will be an array with the pixels positions that color will be changed. The elements from the array should look like [x, y, hue] where x and y are the positions of the pixel that color's you want to be changed and the hue is a number from 0 to 360 with which the pixels's color will be changed. (the `hue` is not required).
 
 `IMAGE` - for this type the `map` value will be an image element , ImageData ( resulted from the canvas' function .getImageData() ) or the image data from ImageData. This is actually a mask which sais thatthe color ofevery pixel that is not white (in the mask) should be changed with the `hue` value.
 
