@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Change HUE of an image with JS</title>
+        <style>
+            *{text-align: center;margin: 0;padding: 0}
+            canvas{
+                width: 100%;
+                height: 50%;
+            }
+        </style>
+    </head>
+    <body>
+        <canvas id="image"></canvas>
+        <form id="hue_form">
+            <input type="range" min="0" max="360" name="hue" style="width: 400px" id="hue">
+            <output name="hue_out" id="hue_out">0</output>
+        </form>
+        <br><br>
+        <h2>Preview images (base image & mask)</h2>
+        <img src="test-3.png" alt="Base image">
+        <img src="test-3-mask.png" alt="Mask">
+        
+        <script src="../hue.js"></script>
+        <script src="js/init.js"></script>
+    </body>
+</html>
